@@ -1,0 +1,39 @@
+.reviews_Main h2{
+  text-align: center;
+}
+
+.reviews_Main span{
+    color: orange;
+}
+
+.reviews_Main {
+    margin-top: 100px;
+    margin-bottom: 120px;
+}
+
+.review_Img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.review_Box{
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 40px;
+}
+
+.reviews_Main{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+}
+
+@media screen and (max-width:900px) {
+    .reviews_Main{
+        width: 90%;
+    }
+}

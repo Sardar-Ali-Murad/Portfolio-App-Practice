@@ -1,0 +1,128 @@
+.intro_Imgs img{
+    height: 40px;
+    width: 40px;
+    color: orange;
+}
+
+.intro_Imgs {
+    display: flex;
+    gap: 50px;
+    margin-top: 70px;
+    margin-left: 30px;
+}
+
+.intro_Main p{
+    color: black;
+}
+
+.name{
+    color: orange;
+}
+
+.intro_Main button{
+    margin-top: 35px;
+}
+
+.intro_Main{
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+
+
+
+.intro_Part2{
+    position: relative;
+}
+
+.overlapping_Imgs img{
+    position: absolute;
+}
+
+.vector1,.vector2{
+    height: 400px;
+    width: 400px;
+}
+
+.Imo1{
+    position: absolute;
+    height: 140px;
+    width: 140px;
+    left: -100px;
+    top: -20px;
+}
+
+.crown{
+    height: 50px;
+    width: 50px;
+}
+
+.web_DevCard{
+    background-color: white;
+    border-radius: 20px;
+    position: absolute;
+    right: 0px;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-weight: bold;
+    top: 30px;
+    right: -50px;
+}
+
+.web_DesignCard{
+    background-color: white;
+    border-radius: 20px;
+    position: absolute;
+    left: 0px;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-weight: bold;
+    bottom: -10px;
+    right: -50px;  
+    width: 240px; 
+}
+
+.web_DevCard h4{
+    color: black;
+}
+
+.web_skill{
+    font-size: 10px;
+}
+
+.intro_Main{
+    display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+
+
+@media screen and (max-width:800px) {
+    .intro_Main{
+        grid-template-columns: 1fr;
+    }
+    .web_DesignCard,.web_DevCard{
+        padding: 10px;
+    }
+    .web_DevCard{
+        right: 10px;
+        top: 100px;
+    }
+    .vector1,.vector2{
+        display: none;
+    }
+    .intro_Part2{
+        margin-top: 140px;
+        background-color: red;
+        width: 100%;
+        left: 30px;
+    }
+    .Imo1{
+        top: 200px;
+    }
+}

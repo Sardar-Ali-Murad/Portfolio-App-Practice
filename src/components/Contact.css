@@ -1,0 +1,156 @@
+
+.contact-details{
+    display: flex;
+    gap: 2rem;
+}
+
+.contact-details img{
+    width: 100%;
+    height: 100%;
+}
+
+.email{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #db9797;
+padding: 16px;
+box-shadow: 2px 2px 2px #bd8989;
+}
+
+.email,.phone p{
+    color: white;
+}
+.phone{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #8787b5;
+padding: 20px;
+}
+
+.email img{
+    width: 40px;
+    height: 40px;
+}
+
+
+.phone img{
+    width: 40px;
+    height: 40px;
+}
+
+.contact-details,.chat{
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.chat{
+    margin-left: 55%;
+}
+
+@media screen and (max-width:900px) {
+    .contact-details{
+        flex-direction: column;
+        width: 70%;
+    }.chat{
+        margin-left: 50%;
+        width: 70%;
+        margin-left: 50%;
+    }
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.text-area{
+    height: 200px;
+}
+
+.contact-info input{
+    height: 60px;
+}
+
+.chatword{
+    color: pink;
+    text-shadow: 2px 2px 2px black;
+}
+
+.submit{
+    margin-left: 50%;
+transform: translateX(-50%);
+background: #7171cc;
+width: 106px;
+height: 56px;
+color: white;
+}
+
+.important-icons-main{
+    position: fixed;
+    bottom: 10%;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    z-index: 30;
+}
+
+.i-icon-single{
+    backdrop-filter: blur(20px);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .3);
+    display: grid;
+    place-items: center;
+    backdrop-filter: blurr(30px);
+    cursor: pointer;
+    color: white;
+}
+
+.i-icon{
+    font-size: 30px;
+}
+
+.fancy-link {
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 10px;
+  }
+  
+  .fancy-link:hover{
+    scale: 1.1;
+  }
+
+  .fancy-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 10;
+    width: 100%;
+    height: 2px;
+    /* background: currentColor; */
+    background-color: red;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    transition: -webkit-transform 250ms ease-in;
+    transition: transform 250ms ease-in;
+    transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
+    margin-top: 20px;
+  }
+  
+  .fancy-link:hover::after {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: left;
+            transform-origin: left;
+  }
+
+
+  /*  */

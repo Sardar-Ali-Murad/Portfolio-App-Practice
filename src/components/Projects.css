@@ -1,0 +1,17 @@
+.project_Main h2,h3{
+    text-align: center;
+}
+
+.project_Main{
+    margin-top: 120px;
+    margin-bottom: 50px;
+}
+
+.project_Main h3{
+    color: orange;
+}
+
+
+.mySwiper img{
+    border-radius: 20px;
+}

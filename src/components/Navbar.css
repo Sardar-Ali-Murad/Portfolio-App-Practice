@@ -1,0 +1,163 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Cedarville+Cursive&family=Cormorant+Garamond:wght@300&family=Handlee&family=Open+Sans:wght@300&family=Oswald&family=Roboto+Mono:wght@300&family=Roboto+Slab&family=Roboto:wght@300;400&family=Rubik+Bubbles&display=swap');
+
+
+.nav_Container_Start,.nav_Container_End{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav_Container_Start h2{
+    color: black;
+}
+.nav_BigMain{
+    position: sticky;
+    top: 0;
+    left: 0;
+    /* right: 0; */
+    z-index: 20;
+    background-color: rgb(197, 169, 117);
+    width: 100vw;
+    /* overflow: hidden; */
+}
+
+.nav_Main{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    /* padding: 30px 7%; */
+    /* padding: 0px 10px; */
+    justify-content: space-around;
+    background-color: rgb(197, 169, 117);
+
+}
+
+.nav_Button{
+    padding: 15px 29px;
+background: orange;
+outline: none;
+border: none;
+border-radius: 10px;
+color: white;
+cursor: pointer;
+}
+
+.ham {
+    /* display: none */
+    font-size: 30px;
+}
+
+.nav_Container_End nav ul li a{
+    color: black;
+    font-weight: bold;
+   cursor: pointer;
+       font-family: 'Roboto Slab', serif;
+}
+
+.nav_Pic{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.small_Screen_Nav{
+    display: flex;
+    flex-direction: column;
+    padding: 10% 7%;
+background-color: rgba(0, 0, 0, .5);
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100vh;
+transition: .2s linear;
+transform: translateX(-2000px);
+display: none;
+backdrop-filter: blur(20px);
+z-index: 20;
+}
+
+.small_Screen_Nav *{
+    margin-top: 20px;
+}
+
+
+
+.small_Screen_Nav button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+        font-family: 'Roboto Slab', serif;
+}
+
+.small_Screen_Nav nav ul {
+    display: flex;
+    flex-direction: column;
+}
+.small_Screen_Nav nav ul li a {
+    color: white;
+    cursor: pointer;
+        font-family: 'Roboto Slab', serif;
+}
+
+.small_Nav_Big_Main{
+    position: relative;
+}
+.nav_Cross{
+    color: orange;
+    font-size: 40px;
+    z-index: 10;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+
+
+
+.small_Nav_Active{
+    transform: translateX(0px);
+}
+
+
+.cross_Active{
+    display: block;
+}
+
+.nav_Button{
+    font-family: 'Roboto Slab', serif;
+}
+
+
+.nav_Ham{
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.small_Btn{
+    margin-top: 40px;
+}
+
+@media screen and (max-width:900px) {
+    .nav_Container_Start h2{
+        display: none;
+    }
+    .small_Screen_Nav{
+        display: block;
+        gap: 40px;
+    }
+}
+
+
+@media screen and (max-width:900px) {
+    .nav_Container_End{
+        display: none;
+    }
+    .nav_Container_Start h2{
+        display: block;
+    }
+}

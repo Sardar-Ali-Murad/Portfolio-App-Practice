@@ -1,0 +1,112 @@
+.services_Main{
+    margin-top: 200px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.service{
+    color: orange;
+    margin-left: 10px;
+}
+
+.services_Main p{
+    color: black;
+    margin-bottom: 30px;
+}
+
+.card_Head{
+    font-family: 'Roboto Slab', serif;
+}
+
+.card a{
+    color: blue;
+    background-color: white;
+    padding: 7px;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px black;
+    width: 100px;
+    margin-bottom: 10px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.card{
+    background-color: white;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+    border: 3px solid orange;
+    padding: 5px;
+}
+
+.card img{
+    height: 100px;
+    width: 100px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.services_Part2{
+    /* background-color: red; */
+    display: flex;
+    gap: 30px;
+}
+
+.card1_Main{
+    /* background-color: pink; */
+    display: flex;
+    margin-top: 50%;
+    transform: translateY(-50%);
+}
+
+.card_Other_Main{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.services_Main{
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+@media screen and (max-width:900px){
+    .services_Main{
+        grid-template-columns: 1fr;
+        }
+       .card{
+        width: 100%;
+       }
+}
+
+
+@media screen and (max-width:800px){
+    .services_Main{
+        margin-top: 500px;
+        }
+    }
+    
+    
+    @media screen and (max-width:900px){
+        .card_Other_Main{
+            flex-direction: row;
+        }
+        .services_Part2{
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+    
+    
+    @media screen and (max-width:700px){
+        .card_Other_Main{
+            flex-direction: column;
+        }
+    }
+

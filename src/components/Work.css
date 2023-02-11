@@ -1,0 +1,118 @@
+.work_Part1{
+    margin-top: 60px;
+}
+
+
+.work_Part1 h2{
+    color: orange;
+}
+
+.work_Part1 button{
+    margin-top: 40px;
+}
+
+
+.work_Part2 .Vector3{
+   border-radius: 50%;
+   position: absolute;
+   height: 400px;
+   width: 400px;
+}
+
+.roll{
+  background-color: white;
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 2px aliceblue;
+  position: relative;
+}
+
+
+.work_Main{
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+
+}
+
+
+
+/* .amazon{
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+} */
+.roll img{
+    width: 40px;
+    height: 40px;
+}
+
+.roll_Box{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.amazon{
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.upwork{
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.fiverr{
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.facebook{
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.shopify{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%); 
+}
+
+.work_Main{
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width:900px) {
+    .work_Main{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .roll{
+        width: 350px;
+        height: 350px;
+    }
+}
+
+
+@media screen and (max-width:380px) {
+    .roll{
+        width: 300px;
+        height: 300px;
+    }
+}
